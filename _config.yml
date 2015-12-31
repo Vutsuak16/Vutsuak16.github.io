@@ -10,7 +10,7 @@ title: Floyd Rock And Code
 email: vutsuak96@gmail.com
 description: This blog contains projets that  I have made over the years .Most of the times under the influence of Pink Floyd. 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://trippy-code.com" # the base hostname & protocol for your site
+url: "Vutsuak16.github.io" # the base hostname & protocol for your site
 github_username:  Vutsuak16
 # Build settings
 markdown: kramdown
