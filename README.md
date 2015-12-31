@@ -1,6 +1,6 @@
-typewriter
+FLoyd Rock and Code
 ==========
 
-A simple and beautiful theme for Jekyll.
+My code lives here
 
 ![Screenshot](https://raw.githubusercontent.com/alixedi/typewriter/master/images/screenshot.png)
