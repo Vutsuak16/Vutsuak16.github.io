@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Equivocation"
+date:   2015-12-31 17:02:50
+categories: intro
+---
+
+Welcome to my code-blog. This is the place where all my projects worth mentioning ,reside.
+For me life has always been Floyd Rock and Code.
+
+
+{% highlight python %}
+def print_hi(name):
+  	print "Hi, " +name
+print_hi('kaustuv')
+# prints 'Hi, kaustuv' to STDOUT.
+{% endhighlight %}
+
+Check out my personal blog at [BadassReaders][badass] for more info on how to get the most out of Jekyll. 
+
+[jekyll]:    http://vutsuak95.blogspot.in/
