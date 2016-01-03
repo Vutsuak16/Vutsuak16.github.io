@@ -7,6 +7,7 @@ categories: script
 
 
 This script sends text file data from desktop to arduino, via serial communication
+
 {% highlight python %}
 
 __author__ = 'kaustuv'
@@ -23,6 +24,6 @@ for i in string:
 
 {% endhighlight %}
 
-Checkout the rest of the project at [desktop-arduino][github]. This also includes the SQL and GUI part  
+Checkout the rest of the project at [desktop-arduino][github].
 
 [github]:    https://github.com/Vutsuak16/Braille/blob/master/Arduino.py
