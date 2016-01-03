@@ -6,7 +6,7 @@ categories: script
 ---
 
 
-This script sends text filr data from desktop to arduino, via serial communication
+This script sends text file data from desktop to arduino, via serial communication
 {% highlight python %}
 
 __author__ = 'kaustuv'
