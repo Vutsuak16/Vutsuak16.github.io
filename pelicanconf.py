@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = u'Kaustuv Deolal'
 SITENAME = u'Rock and Code'
 SITEURL = ''
-THEME = "pelican-themes/alchemy"
+THEME = "I:\Vutsuak16.github.io\pelican-themes"
 PATH = 'content'
 
 TIMEZONE = 'Asia/Kolkata'
