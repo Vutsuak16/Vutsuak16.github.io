@@ -6,7 +6,7 @@ AUTHOR = u'Kaustuv Deolal'
 SITENAME = u'Rock and Code'
 SITEURL = ''
 PATH = 'content'
-
+THEME='alchemy'
 TIMEZONE = 'Asia/Kolkata'
 
 DEFAULT_LANG = u'en'
