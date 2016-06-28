@@ -32,3 +32,28 @@ DEFAULT_PAGINATION = 5
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+PAGES_ON_MENU = True
+PROFILE_IMAGE = '/images/profile.svg width="200" height="200"'
+SHOW_ARTICLE_AUTHOR = True
+SITE_SUBTEXT = 'Nairobi GNU/Linux Users Group'
+META_DESCRIPTION = '''Nairobi GNU/Linux Users Group is a not-for-profit
+                   community serving the greater Nairobi area. We are a
+                   collection of people dedicated to GNU/Linux, Free Software,
+                   Open Source, and other related topics.'''
+
+EXTRA_FAVICON = True
+
+# LICENSE_URL = ''
+# LICENSE_NAME = ''
+DELETE_OUTPUT_DIRECTORY = True
+
+
+LINKS = (
+    ('David Karibe', 'http://karibe.co.ke/'),
+    ('Mjanja Tech', 'http://mjanja.co.ke/'),
+    ('Moshe Njema', 'http://nj3ma.wordpress.com/'),
+)
+
+GITHUB_ADDRESS = 'https://github.com/nairobilug'
+
+
