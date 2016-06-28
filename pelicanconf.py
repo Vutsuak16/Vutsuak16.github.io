@@ -33,7 +33,7 @@ DEFAULT_PAGINATION = 5
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 PAGES_ON_MENU = True
-PROFILE_IMAGE = 'https://lh5.googleusercontent.com/-lYmjHA_FAUo/TXFDVCuXAuI/AAAAAAAABNQ/Ba4_ZHT1oH8/s1600/Pink_Floyd_-_Animals.jpg'
+PROFILE_IMAGE = 'https://i.ytimg.com/vi/TfDH9V3v2E4/hqdefault.jpg?custom=true&w=120&h=90&jpg444=true&jpgq=90&sp=68&sigh=iNGUint0uVqIhn5RR3AJn8e7DiQ '
 SHOW_ARTICLE_AUTHOR = True
 SITE_SUBTEXT = 'Nairobi GNU/Linux Users Group'
 META_DESCRIPTION = '''Nairobi GNU/Linux Users Group is a not-for-profit
@@ -45,7 +45,7 @@ EXTRA_FAVICON = True
 
 # LICENSE_URL = ''
 # LICENSE_NAME = ''
-DELETE_OUTPUT_DIRECTORY = True
+DELETE_OUTPUT_DIRECTORY = False
 
 
 LINKS = (
