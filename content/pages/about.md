@@ -1,12 +1,12 @@
 Title: About Me 
 Date: 2016-06-26 13:26
 
-!(I:\Vutsuak16.github.io\content\images)
+![kaustuv](https://github.com/Vutsuak16/Vutsuak16.github.io/blob/master/content/images/IMG_7369.JPG)
 
-*Kaustuv Deolal*
-	>Python and FOSS enthusiast
-	>Data Freak
-	>Life is *Floyd Rock and Code*
+###*Kaustuv Deolal*:
+	> Python and FOSS enthusiast
+	> Data Freak
+	> Life is *Floyd Rock and Code*
 
 ```python
 def when_bored():

@@ -33,7 +33,7 @@ DEFAULT_PAGINATION = 5
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 PAGES_ON_MENU = True
-PROFILE_IMAGE = '/images/profile.svg width="200" height="200"'
+PROFILE_IMAGE = 'https://lh5.googleusercontent.com/-lYmjHA_FAUo/TXFDVCuXAuI/AAAAAAAABNQ/Ba4_ZHT1oH8/s1600/Pink_Floyd_-_Animals.jpg'
 SHOW_ARTICLE_AUTHOR = True
 SITE_SUBTEXT = 'Nairobi GNU/Linux Users Group'
 META_DESCRIPTION = '''Nairobi GNU/Linux Users Group is a not-for-profit
