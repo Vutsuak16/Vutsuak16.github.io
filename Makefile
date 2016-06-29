@@ -1,3 +1,6 @@
+
+SHELL=C:/Windows/System32/cmd.exe
+
 PY?=python
 PELICAN?=pelican
 PELICANOPTS=
