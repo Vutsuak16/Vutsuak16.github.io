@@ -14,5 +14,7 @@ Summary: Measure the running time of your loops and compare various functions
  	'''
 
  ###The output would be:
- ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+ ![alt text](https://raw.githubusercontent.com/Vutsuak16/Vutsuak16.github.io/master/content/images/timeit.PNG )
+
+ 
 
