@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Rock and Code</title><link href="http://vutsuak16.github.io./" rel="alternate"></link><link href="http://vutsuak16.github.io./feeds/python.atom.xml" rel="self"></link><id>http://vutsuak16.github.io./</id><updated>2016-06-30T00:00:00+05:30</updated><entry><title>timeit module python</title><link href="http://vutsuak16.github.io./timeit-module-python.html" rel="alternate"></link><published>2016-06-30T00:00:00+05:30</published><author><name>kaustuv deolal</name></author><id>tag:vutsuak16.github.io.,2016-06-30:timeit-module-python.html</id><summary type="html">&lt;p&gt;&lt;em&gt;timeit&lt;/em&gt;  is a usefule python module , that helps you see the running time of various statements in python&lt;/p&gt;
 &lt;h3&gt;Example&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;python
- import timeit 
- timeit.timeit("map(str,range(1000)",number=10000)
- timeit.timeit("[str(i) for i in range(1000)]",number=10000)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;:::python
+     import timeit 
+     timeit.timeit("map(str,range(1000)",number=10000)
+     timeit.timeit("[str(i) for i in range(1000)]",number=10000)&lt;/p&gt;
 &lt;p&gt;The output would be:&lt;/p&gt;
 &lt;h3&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;img alt="alt text" src="https://raw.githubusercontent.com/Vutsuak16/Vutsuak16.github.io/master/images/timeit.PNG" /&gt;&lt;/p&gt;</summary></entry></feed>
