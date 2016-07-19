@@ -1,7 +1,7 @@
 Title: About Me 
 Date: 2016-06-26 13:26
 
-![kaustuv](https://raw.githubusercontent.com/Vutsuak16/Vutsuak16.github.io/master/images/IMG_7369.JPG)
+![kaustuv](https://raw.githubusercontent.com/Vutsuak16/Vutsuak16.github.io/master/content/images/imgserver.jpg)
 
 ##Kaustuv Deolal
 
