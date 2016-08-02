@@ -2,7 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Rock and Code</title><link href="http://vutsuak16.github.io./" rel="alternate"></link><link href="http://vutsuak16.github.io./feeds/all.atom.xml" rel="self"></link><id>http://vutsuak16.github.io./</id><updated>2016-07-16T00:00:00+05:30</updated><entry><title>Spell Corrector</title><link href="http://vutsuak16.github.io./spell-corrector.html" rel="alternate"></link><published>2016-07-16T00:00:00+05:30</published><author><name>kaustuv deolal</name></author><id>tag:vutsuak16.github.io.,2016-07-16:spell-corrector.html</id><summary type="html">&lt;h2&gt;Spell Corrector How it Works??&lt;/h2&gt;
 &lt;p&gt;The Spell Corrector uses &lt;code&gt;Probability Theory&lt;/code&gt;. The objective here is to maximize the function "P(c/w)".
 Where &lt;em&gt;c&lt;/em&gt; stands for correction  and &lt;em&gt;w&lt;/em&gt; for words. It is quite obvious that we need to find the best 
-possible correction for the word encoutered&lt;/p&gt;</summary><category term="python"></category><category term="NLP"></category></entry><entry><title>timeit module python</title><link href="http://vutsuak16.github.io./timeit-module-python.html" rel="alternate"></link><published>2016-06-30T00:00:00+05:30</published><author><name>kaustuv deolal</name></author><id>tag:vutsuak16.github.io.,2016-06-30:timeit-module-python.html</id><summary type="html">&lt;p&gt;&lt;em&gt;timeit&lt;/em&gt;  is a usefule python module , that helps you see the running time of various statements in python&lt;/p&gt;
+possible correction for the word encoutered&lt;/p&gt;
+&lt;p&gt;:::python
+    import re, collections&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;def words(text): return re.findall(&amp;#39;[a-z]+&amp;#39;, text.lower())
+
+def train(features):
+    model = collections.defaultdict(lambda: 1)
+    for f in features:
+        model[f] += 1
+    return model
+
+NWORDS = train(words(file(&amp;#39;big.txt&amp;#39;).read()))
+
+alphabet = &amp;#39;abcdefghijklmnopqrstuvwxyz&amp;#39;
+
+def edits1(word):
+   splits     = [(word[:i], word[i:]) for i in range(len(word) + 1)]
+   deletes    = [a + b[1:] for a, b in splits if b]
+   transposes = [a + b[1] + b[0] + b[2:] for a, b in splits if len(b)&amp;gt;1]
+   replaces   = [a + c + b[1:] for a, b in splits for c in alphabet if b]
+   inserts    = [a + c + b     for a, b in splits for c in alphabet]
+   return set(deletes + transposes + replaces + inserts)
+
+def known_edits2(word):
+    return set(e2 for e1 in edits1(word) for e2 in edits1(e1) if e2 in NWORDS)
+
+def known(words): return set(w for w in words if w in NWORDS)
+
+def correct(word):
+    candidates = known([word]) or known(edits1(word)) or known_edits2(word) or [word]
+    return max(candidates, key=NWORDS.get)
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="python"></category><category term="NLP"></category></entry><entry><title>timeit module python</title><link href="http://vutsuak16.github.io./timeit-module-python.html" rel="alternate"></link><published>2016-06-30T00:00:00+05:30</published><author><name>kaustuv deolal</name></author><id>tag:vutsuak16.github.io.,2016-06-30:timeit-module-python.html</id><summary type="html">&lt;p&gt;&lt;em&gt;timeit&lt;/em&gt;  is a usefule python module , that helps you see the running time of various statements in python&lt;/p&gt;
 &lt;h3&gt;Example&lt;/h3&gt;
 &lt;p&gt;:::python
      import timeit 

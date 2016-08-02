@@ -78,6 +78,37 @@
 <p>The Spell Corrector uses <code>Probability Theory</code>. The objective here is to maximize the function "P(c/w)".
 Where <em>c</em> stands for correction  and <em>w</em> for words. It is quite obvious that we need to find the best 
 possible correction for the word encoutered</p>
+<p>:::python
+    import re, collections</p>
+<div class="highlight"><pre><span></span>def words(text): return re.findall(&#39;[a-z]+&#39;, text.lower())
+
+def train(features):
+    model = collections.defaultdict(lambda: 1)
+    for f in features:
+        model[f] += 1
+    return model
+
+NWORDS = train(words(file(&#39;big.txt&#39;).read()))
+
+alphabet = &#39;abcdefghijklmnopqrstuvwxyz&#39;
+
+def edits1(word):
+   splits     = [(word[:i], word[i:]) for i in range(len(word) + 1)]
+   deletes    = [a + b[1:] for a, b in splits if b]
+   transposes = [a + b[1] + b[0] + b[2:] for a, b in splits if len(b)&gt;1]
+   replaces   = [a + c + b[1:] for a, b in splits for c in alphabet if b]
+   inserts    = [a + c + b     for a, b in splits for c in alphabet]
+   return set(deletes + transposes + replaces + inserts)
+
+def known_edits2(word):
+    return set(e2 for e1 in edits1(word) for e2 in edits1(e1) if e2 in NWORDS)
+
+def known(words): return set(w for w in words if w in NWORDS)
+
+def correct(word):
+    candidates = known([word]) or known(edits1(word)) or known_edits2(word) or [word]
+    return max(candidates, key=NWORDS.get)
+</pre></div>
     </div>
   </div>
   <hr class="separator">
