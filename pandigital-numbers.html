@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+      <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="canonical" href="http://vutsuak16.github.io./categories.html" />
+    <link rel="canonical" href="http://vutsuak16.github.io./pandigital-numbers.html" />
 
-    <title>  Rock and Code &mdash; Categories
+    <title>  Rock and Code &mdash; **Pandigital Numbers**
 </title>
 
       <link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
@@ -25,6 +25,10 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
+    <meta name="author" content="kaustuv deolal">
+    <meta name="description" content="What are Pandigital Numbers??">
+  <meta name="tags" contents="maths, numbers, python, ">
 </head>
 
 <body>
@@ -47,11 +51,55 @@
     </div>
   </div>
 </header> <!-- /.header -->  <div class="container">
-  <h1>Categories on Rock and Code</h1>
-  <ul class="list-unstyled">
-      <li><a href="http://vutsuak16.github.io./category/maths.html">Maths</a></li>
-      <li><a href="http://vutsuak16.github.io./category/python.html">Python</a></li>
-  </ul>
+  <div class="post full-post">
+    <h1 class="post-title">
+      <a href="/pandigital-numbers.html" title="Permalink to **Pandigital Numbers**">**Pandigital Numbers**</a>
+    </h1>
+    <ul class="list-inline">
+      <li class="post-date">
+        <a class="text-muted" href="/pandigital-numbers.html" title="2016-10-19T00:00:00+05:30">Wed 19 October 2016</a>
+      </li>
+      <li class="muted">&middot;</li>
+      <li class="post-category">
+        <a href="http://vutsuak16.github.io./category/maths.html">Maths</a>
+      </li>
+        <li class="muted">&middot;</li>
+        <li>
+            <a href="http://vutsuak16.github.io./tag/maths.html">maths</a>,             <a href="http://vutsuak16.github.io./tag/numbers.html">numbers</a>,             <a href="http://vutsuak16.github.io./tag/python.html">python</a>        </li>
+        <li class="muted">&middot;</li>
+        <li>
+          <address class="post-author">
+            By <a href="http://vutsuak16.github.io./author/kaustuv-deolal.html">kaustuv deolal</a>
+          </address>
+        </li>
+    </ul>
+    <div class="post-content">
+      <p>In Mathematics a number is said to be Pandigital if it contains all the digits from 1 to N atleast once.Where N is the number of digits in the number.
+For example: 
+N=5 then 12345 is a Pandigital number but 11234 is not as it does not contains 5</p>
+<div class="highlight"><pre><span></span>#code to check whether a number is Pandigital or not 
+# The technique imployed is a brute force one
+
+n=int(raw_input(&quot;enter the number of digits&quot;))
+number_check=raw_input(&quot;enter the number&quot;)
+digits=[str(i) for i in range(1,n+1)]
+flg=1
+for i in digits:
+    if i in number_check:
+        pass
+    else:
+        flg=0
+        break
+if flg==0:
+    print &quot;number is not pandigital&quot;
+else:
+    print &quot;number is pandigital&quot;
+</pre></div>
+    </div>
+  </div>
+  <hr class="separator">
+  <div class="col-md-8 col-md-offset-2">
+  </div>
   </div>
 <footer class="footer">
   <div class="container">
