@@ -5,7 +5,7 @@ title2: "Rock" # default: ""
 description: "Welcome to my technical blog"
 keywords: "Python,Blog,Computer Science,success"
 url: http://vutsuak16.github.io # site url
-baseurl: "" # apply repo name if use it under gh-pages branch
+baseurl: "/vutsuak16.github.io/" # apply repo name if use it under gh-pages branch
 # baseurl: null # apply null if repo name is something like username.github.io
 
 
