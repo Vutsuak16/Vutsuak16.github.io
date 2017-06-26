@@ -8,11 +8,6 @@ url: http://vutsuak16.github.io # site url
 baseurl: "" # apply repo name if use it under gh-pages branch
 # baseurl: null # apply null if repo name is something like username.github.io
 
-google_analytics: UA-XXXXX-XX
-repo: http://github.com/heiswayi/thinkspace
-disqus_shortname: "hnbloggithub"
-twitter_username: "HeiswayiNrird"
-comments: true
 
 # Build settings
 permalink   : /:year/:title/
@@ -31,8 +26,8 @@ sass:
 author:
   name     : "Kaustuv Deolal"
   job      : "Software Engineer"
-  bio      : "Code as if it is your last commit"
-  thumb    : assets/images/kauthor.jpg
+  bio      : "Serenade through my technical epiphanies"
+  thumb    : assets/images/kauthor.jpg 
   email    : vutsuak96@gmail.com
   url      : http://vutsuak16.github.io
   github   : https://github.com/Vutsuak16
@@ -40,10 +35,6 @@ author:
   facebook : https://www.facebook.com/kaustuv.deolal
   linkedin : https://www.linkedin.com/in/kaustuv16/
 
-# social settings
-og_locale: "en_US"
-twitter_card: "summary_large_image"
-twitter_site: "@HeiswayiNrird"
 
 gems:
   - bourbon
