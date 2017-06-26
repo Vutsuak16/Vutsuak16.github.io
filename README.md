@@ -1,13 +1,9 @@
-# Thinkspace v2.1
+# My technical epiphanies
 
-Thinkspace is just another minimalist Jekyll theme which is best suit for technical writing, but not limited to. Good for personal blog type too or project-based blog. Disqus comment is included.
-
-[**Live Demo**](http://heiswayi.github.io/thinkspace/)
+I spend my day pouring myself over progressive rock and cool APIs. 
 
 ### Screenshot
 
-![Thinkspace Screenshot](http://i.imgur.com/IMQDB9e.png)
+![Front Look](http://i.imgur.com/IMQDB9e.png)
 
-### License
 
-[MIT](LICENSE.md)
