@@ -92,7 +92,7 @@ This matches all the city with *Rio* in them and returns the details associated 
 Here is another example in which I have created a Kibana *bar chart* that gives us comparison of prices incurred in real estate transactions per city.
 
 
-![price]( {{'/assets/images/price-sacra.PNG' | prepend: site.baseurl }})
+![price]( {{'/assets/images/price-sacra2.PNG' | prepend: site.baseurl }})
 
 
 
