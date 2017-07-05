@@ -13,6 +13,9 @@ corporate conglomerates too. It has a simple setting up process and even simpler
 To make the process of using ELK stack even clearer I would be visualizing the [Sacramento Real estate transaction data](https://support.spatialkey.com/spatialkey-sample-csv-data/)
 
 
+### Logstash
+
+
 ### Elasticsearch
 
 Elasticsearch is a schema free search engine, based on Lucene. It provides various REST APIs to query across data. It is fast because it queries
@@ -27,10 +30,6 @@ CURL syntax is as follows for a simple *GET* query:
 
 It returns a json document for the index `twitter` and document id `tweet`
 
-
-
-
-### Logstash
 
 
 ### Kibana
