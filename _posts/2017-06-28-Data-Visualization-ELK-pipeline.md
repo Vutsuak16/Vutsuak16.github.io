@@ -6,14 +6,12 @@ comments: true
 keywords: "python, execution time, alogorithms, Ipython"
 ---
 
-Everyone of us has done alogorithmic design. Many time such situations arise when we have to find execution time of our code snippets.There are instances when we have to compare executions of two different algorithms to find which is more efficient.Such analysis is very handy for research and production purposes, where a small change in time could mean having a significant overall impact.
-In such situations we can use the awesome *timeit* library. It is a small and efficient module for finding the execution time of python scripts. It implots the use of a platform-specific time function to provide the most accurate time calculation possible. It reduces the impact of startup or shutdown costs on the time calculation by executing the code repeatedly.
-
-### Installation
-Not required!!. It ships in with python installation itself.
+Elasticsearch Logstash and Kibana popularly abbreviated as ELK is a modern data aggregation, data querying and data visualization tool.
+All the compnents of the ELK stack are seamlessly integrated for working coherently. ELK stack is fast gaining popularity and is being adopted by
+corporate conglomerates too. It has a simple setting up process and even simpler learning curve. I will introduce in brief the three components of ELK stack.
 
 
-### A standard example of Usage 
+### Elasticsearch
 
 It can be used both as a command line application as well as a module
 
