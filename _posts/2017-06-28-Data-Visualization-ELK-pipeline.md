@@ -90,7 +90,7 @@ An instance of *painless* syntax could be a simple *GET* query:
 Here in this example I have created a Kibana *bar chart* that gives us comparison of prices incurred in real estate transactions per city.
 
 
-![price]( {{'/assets/images/price-sacre.PNG' | prepend: site.baseurl }})
+![price]( {{'/assets/images/price-sacra.PNG' | prepend: site.baseurl }})
 
 
 
