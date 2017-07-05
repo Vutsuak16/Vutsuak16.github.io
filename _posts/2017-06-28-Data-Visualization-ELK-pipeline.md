@@ -45,8 +45,8 @@ The script was as follows:
         }   
             `
 
-    Note here we use the logtstash [CSV](https://www.elastic.co/guide/en/logstash/current/plugins-filters-csv.html) filter to parse the csv file.
-    And mutate filter is used to change the datatype of a particular field. The data is loaded to an index name *sacramento* and is displayed in the *Kibana dashboard*.
+Note here we use the logtstash [CSV](https://www.elastic.co/guide/en/logstash/current/plugins-filters-csv.html) filter to parse the csv file.
+And mutate filter is used to change the datatype of a particular field. The data is loaded to an index name *sacramento* and is displayed in the *Kibana dashboard*.
 
 
 ### Elasticsearch
@@ -59,7 +59,7 @@ It can executed through the console/command line via *CURL* or one can use [POST
 
 CURL syntax is as follows for a simple *GET* query:
     
-    `curl -XGET 'localhost:9200/sacramento/?pretty'`
+    curl -XGET 'localhost:9200/sacramento/?pretty'
 
 It returns a json document for the index `sacramento` giving all the details of the contained fields in the data.
 The response pattern was as follows:
