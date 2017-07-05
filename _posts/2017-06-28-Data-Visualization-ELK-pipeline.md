@@ -26,9 +26,14 @@ It can executed through the console/command line via *CURL* or one can use [POST
 
 CURL syntax is as follows for a simple *GET* query:
     
-    `curl -XGET 'localhost:9200/twitter/tweet/0?pretty'`
+    `curl -XGET 'localhost:9200/sacramento/?pretty'`
 
-It returns a json document for the index `twitter` and document id `tweet`
+It returns a json document for the index `sacramento` giving all the details of the contained fields in the data.
+The response pattern was as follows:
+
+![response]( {{'/assets/images/response.PNG' | prepend: site.baseurl }})
+
+
 
 
 
