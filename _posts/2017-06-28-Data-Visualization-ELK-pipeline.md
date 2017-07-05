@@ -13,30 +13,24 @@ corporate conglomerates too. It has a simple setting up process and even simpler
 
 ### Elasticsearch
 
-It can be used both as a command line application as well as a module
+Elasticsearch is a schema free search engine, based on Lucene. It provides various REST APIs to query across data. It is fast because it queries
+data based on Index. It is like searching the contents of book through its index. Data in index is organized on basis of documents.An index can contain
+multiple documents. Elasticsearch centrally stores our data.
+An example of its REST API is the *GET* API that searches across multiple or unique indexes.
+It can executed through the console/command line via *CURL* or one can use [POSTMAN](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en)
+CURL syntax is as follows for a simple *GET* query:
+    
+    `curl -XGET 'localhost:9200/twitter/tweet/0?pretty'`
 
-*command line*
-
-
-![command]( {{'/assets/images/command.PNG' | prepend: site.baseurl }})
-
-
-*as a module import*
-
-
-
-![module]({{'/assets/images/script.PNG' | prepend: site.baseurl }})
+It returns a json document for the index `twitter` and document id `tweet`
 
 
-### Integration with Jupyter/Ipyhon
-
- Cool stuff is that timeit is build into both Jupyter and Ipython as a magic function. 
- It can be executed by using the simple *%* operator.
 
 
-![module]({{'/assets/images/ipython.PNG' | prepend: site.baseurl }})
+### Logstash
 
 
+### Kibana
 
 
 
