@@ -15,6 +15,39 @@ To make the process of using ELK stack even clearer I would be visualizing the [
 
 ### Logstash
 
+I am logtstash before elasticsearch, going against the convention, because here first main processing takes place through logstash conf file.
+The data (SacramentoRealEstateTransaction.csv) file is loaded into elasticsearch, via a simple logstash script. 
+The script was as follows:
+
+    `
+        input {
+          file {
+            path => "C:/Users/deolal/Desktop/Sacramentorealestatetransactions.csv"
+            sincedb_path => ["C:/Users/deolal/logstash-5.2.0/sincedb/sdbfile"]
+            start_position => "beginning"
+          }
+        }
+        filter {
+          csv {
+              separator => ","
+             columns => ["street","city","zip","state","beds","bath","square_feet","type","sale_date","price","latitude","longitude"]
+          }
+          mutate {
+              convert => [ "price", "float" ]
+          }
+        }
+        output {
+           elasticsearch {
+             document_type => "estate-cost"
+             hosts => ["http://localhost:9200"]
+             index => "sacramento"
+          }
+        }   
+            `
+
+    Note here we use the logtstash [CSV](https://www.elastic.co/guide/en/logstash/current/plugins-filters-csv.html) filter to parse the csv file.
+    And mutate filter is used to change the datatype of a particular field. The data is loaded to an index name *sacramento* and is displayed in the *Kibana dashboard*.
+
 
 ### Elasticsearch
 
@@ -32,8 +65,6 @@ It returns a json document for the index `sacramento` giving all the details of 
 The response pattern was as follows:
 
 ![response]( {{'/assets/images/response.PNG' | prepend: site.baseurl }})
-
-
 
 
 
