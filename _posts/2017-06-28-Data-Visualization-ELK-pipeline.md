@@ -70,8 +70,13 @@ The response pattern was as follows:
 
 ### Kibana
 
+Kibana is the frontend of ELK stack. Kibana lets us visualize our Elasticsearch data. It ships in with classic histograms,pie charts and data tables.
+Then there are data aggregation queries which either can be written using an aptly name language called *painless* or it can also be controlled using the Kibana GUI.
+Other than that Kibana has options for mapping GEO points on the map and also lets us plot timeseries data.
+Here in this example I have created a Kibana *bar chart* that gives us comparison of prices incurred in real estate transactions per city.
 
 
+![price]( {{'/assets/images/price-sacre.PNG' | prepend: site.baseurl }})
 
 
 
