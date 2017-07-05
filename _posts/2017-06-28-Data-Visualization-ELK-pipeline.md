@@ -86,8 +86,10 @@ An instance of *painless* syntax could be a simple *GET* query:
             }
         } 
 
+This matches all the city with *Rio* in them and returns the details associated with them.
 
-Here in this example I have created a Kibana *bar chart* that gives us comparison of prices incurred in real estate transactions per city.
+
+Here is another example in which I have created a Kibana *bar chart* that gives us comparison of prices incurred in real estate transactions per city.
 
 
 ![price]( {{'/assets/images/price-sacra.PNG' | prepend: site.baseurl }})
