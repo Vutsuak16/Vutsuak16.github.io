@@ -31,37 +31,5 @@ Refresh package cache and install the newest s3cmd:
 
 ####For windows:
 
-
-### A standard example of Usage 
-
-It can be used both as a command line application as well as a module
-
-*command line*
-S
-
-![command]( {{'/assets/images/command.PNG' | prepend: site.baseurl }})
-
-
-*as a module import*
-
-
-
-![module]({{'/assets/images/script.PNG' | prepend: site.baseurl }})
-
-
-### Integration with Jupyter/Ipyhon
-
- Cool stuff is that timeit is build into both Jupyter and Ipython as a magic function. 
- It can be executed by using the simple *%* operator.
-
-
-![module]({{'/assets/images/ipython.PNG' | prepend: site.baseurl }})
-
-
-
-
-
-
-
-
-
+Follow the ![link](http://www.s3express.com/download.htm)
+    
