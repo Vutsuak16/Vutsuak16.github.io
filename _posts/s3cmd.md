@@ -11,7 +11,25 @@ It is widely used by corporates and startups. The data is stored in S3 objects c
 It supports various operations like delete, fetch, upload etc.
 
 ### Installation
-Not required!!. It ships in with python installation itself.
+
+*s3cmd* requires python 2.6x or newer.It is not compatible with python3.
+
+####For Redhat, CentOs & Fedora systems:
+
+     sudo yum --enablerepo updates-testing install s3cmd
+
+####For Ubuntu & Debian systems:
+
+Import S3tools signing key: 
+    wget -O- -q http://s3tools.org/repo/deb-all/stable/s3tools.key | sudo apt-key add -
+
+Add the repo to sources.list:
+    sudo wget -O/etc/apt/sources.list.d/s3tools.list http://s3tools.org/repo/deb-all/stable/s3tools.list
+
+Refresh package cache and install the newest s3cmd: 
+    sudo apt-get update && sudo apt-get install s3cmd
+
+####For windows:
 
 
 ### A standard example of Usage 
