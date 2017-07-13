@@ -8,13 +8,13 @@ keywords: "sorting, simple, python"
 
 ### What is this post about.?
 
-I was pouring myself over a few sorting algorithms like quicksort,mergesort etc. Then randomly a sorting idea dawned upon me.
-I am having absolutely no copyright issue on this algorithm, it in all probability would have been in existence, but it was random for me.
+One day I was pouring myself over a few sorting algorithms like quicksort,mergesort etc. The in an instant a sorting idea dawned upon me.
+The idea by no means is unique, it in all probability would have been in existence, but it was random for me.
 
 ### How it works 
 
 The algorithm uses basic iteration to sort elements in a list or an array. The loop ranges from the minimum element in the array to the max element.
-In the process all the intermediate elements are covered. It the checks if the iterating element is present in the array, if True it simple prints it or 
+In the process all the intermediate elements are covered. It the checks if the iterating element is present in the array, if True it simply prints it or 
 adds it to a new list
 
 ### Code
