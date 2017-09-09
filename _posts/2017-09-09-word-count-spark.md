@@ -20,12 +20,12 @@ System.exit(0)
 
 The code above has two main compnent of spark they are  : _Transformation_ and _Action_
 
-Transformation is basically taking a RDD value and return multiple RDDs or a changed RDD. FlatMap above does that. Action is an operation on RDD that produces non RDD values for us it was the ```saveAsTextFile```
-
+Transformation is basically taking a RDD value and return multiple RDDs or a changed RDD, ```flatMap``` above does that for us. Action is an operation on RDD that produces a non RDD values like the ```saveAsTextFile```
+operation above
 
 ### The output 
 
-![module]({{'/assets/images/output-spark' | prepend: site.baseurl }})
+![spark-output]({{'/assets/images/output-spark.png' | prepend: site.baseurl }})
 
 The output is split in multiple files (2 files is the default). This demonstrates parellism employed in Spark
 
