@@ -30,7 +30,7 @@ The main python module used is [pyserial](https://pythonhosted.org/pyserial/inde
 
 ### Program controlling the pin movements
 
-![braille-output]({{'/assets/images/output-spark.png' | prepend: site.baseurl }})
+![braille-output]({{'/assets/images/output-braille.png' | prepend: site.baseurl }})
 
 The program above is stored in the microcontroller memory and function with respect to the input
 
