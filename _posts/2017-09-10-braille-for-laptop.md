@@ -1,34 +1,40 @@
 ---
 layout: post
-title: Braille for Text Document
+title: Braille Printer for Text Document
 description: "A hardware setup that lets blind people read those text files"
 comments: true
-keywords: "arduino, python, embedded, C, braille "
+keywords: "arduino, python, embedded, C, braille"
 ---
 
-This blog post is about an interesting project I did a while ago. The aim for the project was to create a setup that generated braille for text files in our personal computers. This would be of immense help for blind people who struggled to read something on text files. So I teamed up with a friend of mine who was from electronics backgroud to create such a setup. 
-The basic setup involved an arduino that read text files character by character. The character was converted to braille using an algorithm written in embedded C. The reaader would just have to have his hand on the setup and read what character was being created as braille. 
+This blog post is about an interesting project I did a while ago. The aim for the project was to create a printer setup that generated braille for text files in our personal computers. This would be of immense help for optically challenged people who struggled to read something on text files. So I teamed up with a friend of mine who was from electronics backgroud to create such a setup. 
+The basic setup involved an arduino that read text files character by character. The character was converted to braille using an algorithm written in embedded C. The reaader would just have to have his hand on the setup and read what character was being created as braille. The hardware setup is made by soldering a circuit that was attached to pins. A very basic printer prototype, the pins would print out various manifestations of the braille. The hardware is controlled by arduino.
+The printer program had two parts
+⋅⋅1. A python program that parsed the text file in our computers and passed data character by character to the Arduino attached  
+⋅⋅2. An embedded C program that read the input and controlled the pin movement of our rudimentary printer
 
-### The Word Count
+### Parsing the text and sending it to the Arduino
 
-```scala
-val inputFile = sc.textFile("/Users/vutsuak/Desktop/Big-Data-withSpark/wordcount/dataset/cucumber.txt")
-val counts = inputFile.flatMap(line => line.split(" ")).map(word => (word,1)).reduceByKey(_+_)
-counts.saveAsTextFile("/Users/vutsuak/Desktop/Big-Data-withSpark/wordcount/output")
-System.exit(0)
+```python
+import serial
+import time
+f = open("/home/kaustuv/Desktop/text", "r") # change the path here and install pyserial module of python
+string = (f.readline()).strip()
+arduino1 = serial.Serial(port="/dev/ttyUSB1", baudrate=9600)
+for i in string:
+        #time.sleep(2)
+        print i
+        arduino1.write(i)
 ```
 
-The code above has two main compnent of spark they are  : _Transformation_ and _Action_
+The main python module used is [pyserial](https://pythonhosted.org/pyserial/index.html)
 
-Transformation is basically taking a RDD value and return multiple RDDs or a changed RDD, ```flatMap``` above does that for us. Action is an operation on RDD that produces a non RDD values like the ```saveAsTextFile```
-operation above
+### Program controlling the pin movements
 
-### The output 
+![braille-output]({{'/assets/images/output-spark.png' | prepend: site.baseurl }})
 
-![spark-output]({{'/assets/images/output-spark.png' | prepend: site.baseurl }})
+The program above is stored in the microcontroller memory and function with respect to the input
 
-The output is split in multiple files (2 files is the default). This demonstrates parellism employed in Spark
-
+For the complete code here is the link to the [repository](https://github.com/Vutsuak16/Braille)
 
 
 
