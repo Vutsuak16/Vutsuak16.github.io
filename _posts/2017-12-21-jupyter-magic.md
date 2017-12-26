@@ -10,6 +10,7 @@ It has been sometime since I wrote something. Grad school has kept me busy. But 
 
 ## Magic Commands
 
+
 ### %lsmagic
 
 This is my goto magic function. This command outputs all the available magic functions in the Ipython-Kernel. A very good bet if you have want to find your favourite 
@@ -28,6 +29,13 @@ A very useful commands when one wants to run and display the output of another I
 As the name indicates this commands enables matplotlib in our jupyter notebook. It will make your plot outputs appear and be stored within the notebook.
 
 ![matplotlib-inline]({{'/assets/images/matplotlib.png' | prepend: site.baseurl }})
+
+
+### %prun
+
+This is an interesting magic feature. It shows how much time program spent in each function alongwith the number of calls made.
+
+![prun]({{'/assets/images/prun.png' | prepend: site.baseurl }})
 
 
 
