@@ -8,25 +8,28 @@ keywords: "jupyter, Python,notebook"
 
 It has been sometime since I wrote something. Grad school has kept me busy. But I am back now . Here in this short post I would like to outline my favourite **magic commands**. The word may sound misleading but it indeed is no less than magic. These commands are provided by the IPython kernel and come in handly especially when there is plotting and data work involved. They also can help us to get an estimate of the code complexity.
 
-### Magic Commands
+## Magic Commands
 
-```scala
-val inputFile = sc.textFile("/Users/vutsuak/Desktop/Big-Data-withSpark/wordcount/dataset/cucumber.txt")
-val counts = inputFile.flatMap(line => line.split(" ")).map(word => (word,1)).reduceByKey(_+_)
-counts.saveAsTextFile("/Users/vutsuak/Desktop/Big-Data-withSpark/wordcount/output")
-System.exit(0)
-```
+### %lsmagic
 
-The code above has two main compnent of spark they are  : _Transformation_ and _Action_
+This is my goto magic function. This command outputs all the available magic functions in the Ipython-Kernel. A very good bet if you have want to find your favourite 
+magic command or have a bad memory in general.
 
-Transformation is basically taking a RDD value and return multiple RDDs or a changed RDD, ```flatMap``` above does that for us. Action is an operation on RDD that produces a non RDD values like the ```saveAsTextFile```
-operation above
+![lsmagic]({{'/assets/images/lsmagic.png' | prepend: site.baseurl }})
 
-### The output 
+### %run
 
-![spark-output]({{'/assets/images/output-spark.png' | prepend: site.baseurl }})
+A very useful commands when one wants to run and display the output of another Ipython file. This is useful in data analysis work when we would like to display the visualization code written in another file.
 
-The output is split in multiple files (2 files is the default). This demonstrates parellism employed in Spark
+![run]({{'/assets/images/run.png' | prepend: site.baseurl }})
+
+### %matplotlib inline
+
+As the name indicates this commands enables matplotlib in our jupyter notebook. It will make your plot outputs appear and be stored within the notebook.
+
+![matplotlib-inline]({{'/assets/images/matplotlib.png' | prepend: site.baseurl }})
+
+
 
 
 
