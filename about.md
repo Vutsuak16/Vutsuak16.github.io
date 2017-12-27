@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-![Kaustuv](http://i.imgur.com/9NeHkXG.jpg)
+![Kaustuv]({{'/assets/images/profile.png' | prepend: site.baseurl }})
 
 Hey you !! connoisseur of good stuff,I am Kaustuv Deolal.I spend the day pouring myself over progressive rock and cool APIs. 
 My specialities include Python and Data. 
