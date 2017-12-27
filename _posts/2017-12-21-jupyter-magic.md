@@ -39,7 +39,7 @@ This is an interesting magic feature. It shows how much time program spent in ea
 
 ### %pylab
 
-This function serves as a quick shortcut when we want to work with matplotlib and numpy both. It returns the following output when we run %pylab :
+This function serves as a quick shortcut when we want to work with matplotlib and numpy both. It makes the following imports :
 
 ![pylab]({{'/assets/images/pylab.png' | prepend: site.baseurl }})
 
