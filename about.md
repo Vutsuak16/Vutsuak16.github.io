@@ -4,9 +4,8 @@ title: About
 permalink: /about/
 ---
 
-<img src="/assets/images/profile.png" alt="Drawing" style="width: 600px;height: 500px"/>
-
-
+<img src="/assets/images/profile.png" alt="Drawing" style="width: 200px;height: 200px;border-radius: 50%"/>
+    
 Hey you !! connoisseur of good stuff,I am Kaustuv Deolal.I spend the day pouring myself over progressive rock and cool APIs. 
 My specialities include Python and Data. 
 
