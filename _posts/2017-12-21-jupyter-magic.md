@@ -37,6 +37,12 @@ This is an interesting magic feature. It shows how much time program spent in ea
 
 ![prun]({{'/assets/images/prun.png' | prepend: site.baseurl }})
 
+### %pylab
+
+This function serves as a quick shortcut when we want to work with matplotlib and numpy both. It returns the following output when it we run %pylab :
+
+![pylab]({{'/assets/images/pylab.png' | prepend: site.baseurl }})
+
 
 
 
