@@ -4,7 +4,8 @@ title: About
 permalink: /about/
 ---
 
-![Kaustuv]({{'/assets/images/profile.png' | prepend: site.baseurl }})
+<img src="/assets/images/profile.png" alt="Drawing" style="width: 600px;height: 500px"/>
+
 
 Hey you !! connoisseur of good stuff,I am Kaustuv Deolal.I spend the day pouring myself over progressive rock and cool APIs. 
 My specialities include Python and Data. 
