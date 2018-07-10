@@ -22,7 +22,9 @@ Next we check the commit history and find the appropriate sha-1 for hotfix(life 
 
 ```git log```
 
-![command]( {{'/assets/images/cherry-pick.PNG' | prepend: site.baseurl }})
+![cherry]( {{'/assets/images/cherry-pick.PNG' | prepend: site.baseurl }})
+
+
 
 We copy the appropriate commit SHA-1
 
