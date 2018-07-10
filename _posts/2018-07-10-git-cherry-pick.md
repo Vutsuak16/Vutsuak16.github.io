@@ -6,7 +6,7 @@ comments: true
 keywords: "git, github, version-control"
 ---
 
-### Cherry-Pick ?
+### Whar is Cherry-Pick ?
 
 Cherry Picking in git is a way to include a small hotfix in our code very quickly and smoothly. For example you are working on a branch called *sign-up* , webpages loads perfecly and interacts smoothly with the database but doesnt load a new page when a person signs up. Your buddy "Kaustuv" working on another branch called *paginate* finds the solution to it and merges that as a commit in his branch.
 So instead of being a layman and copy pasting his solution you can use *cherry-pick* to integrate the changes made by james's commit into your branch
@@ -16,13 +16,13 @@ So instead of being a layman and copy pasting his solution you can use *cherry-p
 First we need to find SHA-1 for Kaustuv's commit. For that we need to be in his branch
 i.e. in *paginate*. So make sure we are in *paginate*
 
-	```git checkout paginate```
+```git checkout paginate```
 
 Next we check the commit history and find the appropriate sha-1 for hotfix(life saving commit)
 
-	```git log```
+```git log```
 
-![command]( {{'/assets/images/command.PNG' | prepend: site.baseurl }})
+![command]( {{'/assets/images/cherry-pick.PNG' | prepend: site.baseurl }})
 
 We copy the appropriate commit SHA-1
 
